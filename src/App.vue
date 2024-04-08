@@ -153,11 +153,15 @@ const chats = ref<ChatItem[][]>([
       </p>
 
       <p>
-        Bu makalanyň salgysy: <a href="#">{{ settings.website }}</a>
+        Bu makalanyň salgysy:
+        <a :href="settings.website">{{ settings.website }}</a>
       </p>
 
       <p>
-        Suratda: <a href="#">{{ settings.website }}/surat.jpg</a>
+        Suratda:
+        <a :href="settings.website + '/surat.jpg'" target="_blank"
+          >{{ settings.website }}/surat.jpg</a
+        >
       </p>
     </div>
   </div>
@@ -166,9 +170,10 @@ const chats = ref<ChatItem[][]>([
     <div class="prose mx-auto">
       <p>
         Hakyky makala —
-        <a href="https://neprivet.com/">neprivet.com</a>, ýazan:
-        <a href="https://github.com/selimdev00">selimdev</a>, host:
-        <a href="https://github.com/gozle/">Gozle</a>
+        <a href="https://neprivet.com/" target="_blank">neprivet.com</a>, ýazan:
+        <a href="https://github.com/selimdev00" target="_blank">selimdev</a>,
+        host:
+        <a href="https://github.com/gozle/" target="_blank">Gozle</a>
       </p>
     </div>
   </div>
