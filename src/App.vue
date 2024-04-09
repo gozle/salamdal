@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { ChatItem } from "./components/Chat.vue";
-import { ref } from "vue";
+import { onMounted, ref, nextTick } from "vue";
 import Chat from "./components/Chat.vue";
 
 const settings = {
@@ -173,16 +173,17 @@ const chats = ref<ChatItem[][]>([
           class="hover:opacity-60 transition"
         >
           <div
-            class="w-full h-auto overflow-hidden rounded-xl max-w-[200px] relative"
+            class="w-full h-auto overflow-hidden rounded max-w-[120px] relative"
           >
             <iframe
-              class="h-[30px] pointer-events-none w-full"
+              id="donate"
+              class="h-[30px] pointer-events-none -ml-3"
               src="https://donate.stream/widget-stats?uid=b1adb7025d0844c9958dfac001ada40d&token=9CldoKt6yRvbupW5NYZXAegJqqTp5we48OVPIHz9PE"
             />
           </div>
         </a>
 
-        <div class="flex gap-2 -ml-14">
+        <div class="flex gap-2">
           <span>ýa-da</span>
 
           <span><a href="/qr-donate.png" target="_blank">QR</a></span>
