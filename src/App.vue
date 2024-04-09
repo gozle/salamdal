@@ -168,7 +168,7 @@ const chats = ref<ChatItem[][]>([
         <span>Domen üçin:</span>
 
         <a
-          href="https://donate.stream/yoomoney4100117107210961"
+          href="https://donate.stream/salamdaldir"
           target="_blank"
           class="hover:opacity-60 transition"
         >
