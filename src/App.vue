@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { ChatItem } from "./components/Chat.vue";
-import { onMounted, ref, nextTick } from "vue";
+import { ref } from "vue";
 import Chat from "./components/Chat.vue";
 
 const settings = {
