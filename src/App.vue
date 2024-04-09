@@ -163,6 +163,24 @@ const chats = ref<ChatItem[][]>([
           >{{ settings.website }}/surat.jpg</a
         >
       </p>
+
+      <p class="flex items-center">
+        <span>Domen üçin:</span>
+
+        <a
+          href="https://donate.stream/yoomoney4100117107210961"
+          target="_blank"
+          class="hover:opacity-60 transition"
+        >
+          <div class="w-full h-auto overflow-hidden rounded-xl">
+            <iframe
+              width="100%"
+              class="h-[30px] pointer-events-none"
+              src="https://donate.stream/widget-stats?uid=b1adb7025d0844c9958dfac001ada40d&token=9CldoKt6yRvbupW5NYZXAegJqqTp5we48OVPIHz9PE"
+            />
+          </div>
+        </a>
+      </p>
     </div>
   </div>
 
