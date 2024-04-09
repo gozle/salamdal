@@ -164,7 +164,7 @@ const chats = ref<ChatItem[][]>([
         >
       </p>
 
-      <p class="flex items-center">
+      <div class="flex items-center gap-2">
         <span>Domen üçin:</span>
 
         <a
@@ -172,15 +172,22 @@ const chats = ref<ChatItem[][]>([
           target="_blank"
           class="hover:opacity-60 transition"
         >
-          <div class="w-full h-auto overflow-hidden rounded-xl">
+          <div
+            class="w-full h-auto overflow-hidden rounded-xl max-w-[200px] relative"
+          >
             <iframe
-              width="100%"
-              class="h-[30px] pointer-events-none"
+              class="h-[30px] pointer-events-none w-full"
               src="https://donate.stream/widget-stats?uid=b1adb7025d0844c9958dfac001ada40d&token=9CldoKt6yRvbupW5NYZXAegJqqTp5we48OVPIHz9PE"
             />
           </div>
         </a>
-      </p>
+
+        <div class="flex gap-2 -ml-14">
+          <span>ýa-da</span>
+
+          <span><a href="/qr-donate.png" target="_blank">QR</a></span>
+        </div>
+      </div>
     </div>
   </div>
 
